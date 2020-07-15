@@ -1,0 +1,34 @@
+{
+  "name": "mage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "aos": "^3.0.0-beta.6"
+  },
+  "devDependencies": {
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
+    "rimraf": "^2.6.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "copyslider": "copyfiles -f Vedios/* dist/Vedios && copyfiles -f contact.php dist/",
+    "imagemin": "imagemin ImagesWeb/* -o dist/ImagesWeb",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
+    "build": "npm run clean && npm run imagemin && npm run copyslider && npm run usemin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khuzi/MageBrandMarketing.git"
+  },
+  "author": "salman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khuzi/MageBrandMarketing/issues"
+  },
+  "homepage": "https://github.com/khuzi/MageBrandMarketing#readme"
+}
