@@ -1,3 +1,2 @@
-# Mage
 # Mage-Brand-Marketing
-# Mage-Brand-Marketing
+The dist folder is optimized folder.
